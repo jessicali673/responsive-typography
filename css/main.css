@@ -78,6 +78,7 @@ article ol {
   article {
     margin: 1rem;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -88,8 +89,9 @@ article ol {
   }
 
   article {
-    margin: 0rem auto;
+    margin: 0 auto;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -101,4 +103,5 @@ article ol {
   blockquote {
     margin: 0;
   }
+
 }
