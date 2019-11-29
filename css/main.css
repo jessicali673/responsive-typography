@@ -26,16 +26,15 @@ body {
 
 article {
   max-width: 43em;
-  margin: 1.5rem 1rem;
+  padding: 0 1rem;
 }
 
 article p {
-  margin: 1rem 0rem;
-  padding: .1em 0;
+  margin: 1.3rem 0;
 }
 
 article h1 {
-  margin-bottom: 0.1em;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
@@ -46,11 +45,12 @@ article header {
 article header p {
   font-style: italic;
   margin-top: 0;
+  margin-bottom: 1.3rem;
 }
 
 article > p:last-child {
   border-bottom: 1px solid #999;
-  padding-bottom: 1em;
+  padding-bottom: 1.3rem;
 }
 
 blockquote {
@@ -58,7 +58,6 @@ blockquote {
   color: #555;
   font-size: 1.125rem;
   margin: 0;
-  padding: 0;
 }
 
 .quote {
@@ -66,11 +65,15 @@ blockquote {
 }
 
 article ol {
-  margin: 0;
-  padding: 1em 1.5em;
+  padding: 0 1rem;
 }
 
 @media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 
   article {
     margin: 1rem;
@@ -79,11 +82,22 @@ article ol {
 
 @media only screen and (min-width: 60em) {
 
-  article {
-    margin: 1rem;
+  html {
+    font-size: 120%;
+    line-height: 1.5;
   }
 
-  article blockquote {
-    margin: 2rem;
+  article {
+    margin: 0rem auto;
   }
 }
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  blockquote {
+    margin: 0;
+  }
